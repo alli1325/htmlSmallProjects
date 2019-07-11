@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="survey.css">
+    <title>Formulário Padrão</title>
+</head>
+<body>
+    <div id="title"><h1>Formulário Padrão</h1></div>
+    <form id="survey-form">
+        <div id="description">Criação de formúlario padronizado</div>
+           <div id="left-row">
+                <div class="nome">*Nome:</div> 
+                <div class="email">*E-mail:</div> 
+                <div class="idade">*Idade:</div> 
+                <div class="ocupacao">Ocupação:</div> 
+                <div class="exp" id="exp">Como você definiria a sua qualidade de vida?</div>
+                <div class="renda">Renda Mensal:</div>
+                <div class="interesses">Interesses:</div>
+                <div class="sugestoes">Sugestões:</div> 
+           </div>
+           <div id="right-row">
+               <div id="right-tab"><input type="text" name="name" id="name-label" placeholder="Nome completo" required></div>
+               <div id="right-tab"><input type="email" name="email" id="email-label" placeholder="nome@nome.com" required></div>
+               <div id="right-tab"><input type="number" name="number" id="number-label" min="16" max="65" placeholder="Idade entre 16 e 65 anos" required></div>
+               <select id="dropdown1">
+                    <option value="volvo">Estudante</option>
+                    <option value="saab">Estagiário</option>
+                    <option value="opel">Empregado</option>
+                    <option value="audi">Desempregado</option>
+                    <option value="audi">Outros</option>
+                </select>
+                <div id="radio">
+                    <div class="radio1"><input type="radio" class="radio" name="exp" id="exp" value="Ótima" checked>Ótima</div>
+                    <div class="radio1"><input type="radio" class="radio" name="exp" id="exp" value="Boa">Boa</div>
+                    <div class="radio1"><input type="radio" class="radio" name="exp" id="exp" value="Mediana">Mediana</div>
+                    <div class="radio1"><input type="radio" class="radio" name="exp" id="exp" value="Ruim">Ruim</div>
+                    <div class="radio1"><input type="radio" class="radio" name="exp" id="exp" value="Péssima">Péssima</div>
+                </div>
+                <select id="dropdown2">
+                        <option value="volvo">R$ 0,00 ~ R$ 1.000,00</option>
+                        <option value="saab">R$ 1.001,00 ~ R$ 2.000,00</option>
+                        <option value="opel">R$ 2.001,00 ~ R$ 3.000,00</option>
+                        <option value="audi">R$ 3.001,00 ~ R$ 4.000,00</option>
+                        <option value="audi">R$ 4.001,00 ~ R$ 5.000,00</option>
+                        <option value="audi">Acima de R$ 5.000,00</option>
+                </select>
+                <div id="checkbox">
+                    <input type="checkbox" class="checkbox" name="interesse1" value="Games"> Games<br>
+                    <input type="checkbox" class="checkbox" name="interesse2" value="Filmes"> Filmes<br>
+                    <input type="checkbox" class="checkbox" name="interesse3" value="Esportes"> Esportes<br>
+                    <input type="checkbox" class="checkbox" name="interesse4" value="Moda"> Moda<br>
+                    <input type="checkbox" class="checkbox" name="interesse5" value="Viagens"> Viagens<br>
+                    <input type="checkbox" class="checkbox" name="interesse6" value="Música"> Música<br>
+                </div>
+                <div id="textarea">
+                        <textarea rows="4" cols="50">Sugestões e Comentários...</textarea>
+                </div>    
+            </div>
+           
+    </form>
+</body>
+</html>
